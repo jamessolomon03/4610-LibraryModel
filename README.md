@@ -71,7 +71,7 @@ While our database model supports book management, employee and user tracking, e
 This query allows you to find the most popular book genres at each branch. This can help with gauging supply and demand, and better understanding the trends of their readers.
 
 
-2. Query 2 calculates the average fine amount per User and list users with outstanding fines above the average of their branch
+2. Query 2 calculates the average fine amount per User and lists users with outstanding fines above the average of their branch
 
 <img width="1148" alt="Query 2" src="https://github.com/user-attachments/assets/91ad74d3-1d9b-44c6-812a-536dd1ef0759">
 
@@ -92,7 +92,7 @@ This query allows the system to pinpoint which of the user(s) are the least acti
 This query allows us to find what percent of total books are found in each library. This is important to identify which branches are lacking books in comparison to other branches, which can then be prioritized in following book orders from suppliers.
 
 
-5. Query 5 identifies who has most overdue checkout, how many days overdue it is, and who it was
+5. Query 5 identifies who has the most overdue checkout, how many days overdue it is, and who it was
 
 
 
