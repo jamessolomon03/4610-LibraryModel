@@ -46,23 +46,25 @@ While our database model supports book management, employee and user tracking, e
 
 ## Data Dictionary
 
-<img width="811" alt="UserEvents" src="https://github.com/user-attachments/assets/3d469029-1891-4e6b-9da2-2330a268c5e4">
-<img width="814" alt="Transactions" src="https://github.com/user-attachments/assets/2444ddeb-24d6-4716-be89-69226a212301">
-<img width="813" alt="Suppliers" src="https://github.com/user-attachments/assets/d01ff685-dd91-45f8-8bd6-eaaaa76156c8">
-<img width="814" alt="LibraryUsers" src="https://github.com/user-attachments/assets/6bc4748b-68ae-4049-9925-e7220cf0d2a7">
-<img width="813" alt="Genre" src="https://github.com/user-attachments/assets/29a0a910-b2ce-4367-86d0-20f092ca33cf">
-<img width="811" alt="Events" src="https://github.com/user-attachments/assets/d5d53264-86ba-426e-ba15-151ea72386a8">
-<img width="813" alt="Employees" src="https://github.com/user-attachments/assets/e27787a1-3905-49e5-942a-dd165e31d07d">
-<img width="810" alt="Checkouts" src="https://github.com/user-attachments/assets/4f0e2c5a-7ebb-440e-a485-c9e801ab04de">
-<img width="812" alt="Branches" src="https://github.com/user-attachments/assets/961bf89e-ff1f-47f5-8d53-19b1f96bbc71">
-<img width="814" alt="Books" src="https://github.com/user-attachments/assets/c9473656-501a-40ac-932c-c4e344d2ae76">
-<img width="814" alt="BookGenre" src="https://github.com/user-attachments/assets/a025d6d6-c6ca-4722-bce0-6ba7b6d7e12b">
 <img width="810" alt="Authors" src="https://github.com/user-attachments/assets/985bf67c-f063-4f2e-b707-c1602d88bbd5">
+<img width="814" alt="BookGenre" src="https://github.com/user-attachments/assets/a025d6d6-c6ca-4722-bce0-6ba7b6d7e12b">
+<img width="814" alt="Books" src="https://github.com/user-attachments/assets/c9473656-501a-40ac-932c-c4e344d2ae76">
+<img width="812" alt="Branches" src="https://github.com/user-attachments/assets/961bf89e-ff1f-47f5-8d53-19b1f96bbc71">
+<img width="810" alt="Checkouts" src="https://github.com/user-attachments/assets/4f0e2c5a-7ebb-440e-a485-c9e801ab04de">
+<img width="813" alt="Employees" src="https://github.com/user-attachments/assets/e27787a1-3905-49e5-942a-dd165e31d07d">
+<img width="811" alt="Events" src="https://github.com/user-attachments/assets/d5d53264-86ba-426e-ba15-151ea72386a8">
+<img width="813" alt="Genre" src="https://github.com/user-attachments/assets/29a0a910-b2ce-4367-86d0-20f092ca33cf">
+<img width="814" alt="LibraryUsers" src="https://github.com/user-attachments/assets/6bc4748b-68ae-4049-9925-e7220cf0d2a7">
+<img width="813" alt="Suppliers" src="https://github.com/user-attachments/assets/d01ff685-dd91-45f8-8bd6-eaaaa76156c8">
+<img width="814" alt="Transactions" src="https://github.com/user-attachments/assets/2444ddeb-24d6-4716-be89-69226a212301">
+<img width="811" alt="UserEvents" src="https://github.com/user-attachments/assets/3d469029-1891-4e6b-9da2-2330a268c5e4">
 
 
 ## Queries
 
 <img width="676" alt="Query Info" src="https://github.com/user-attachments/assets/011a86b7-cdab-4160-8499-68ee5f623297">
+
+
 
 1. Query 1 finds the most popular genres by checkouts per branch including their average checkout duration and number of unique borrowers
 
