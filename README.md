@@ -62,9 +62,7 @@ While our database model supports book management, employee and user tracking, e
 
 ## Queries
 
-<img width="676" alt="Query Info" src="https://github.com/user-attachments/assets/011a86b7-cdab-4160-8499-68ee5f623297">
-
-
+<img width="676" alt="Query Info" src="https://github.com/user-attachments/assets/011a86b7-cdab-4160-8499-68ee5f623297"> <br/>
 
 1. Query 1 finds the most popular genres by checkouts per branch including their average checkout duration and number of unique borrowers
 
