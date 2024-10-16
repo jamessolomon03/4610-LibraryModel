@@ -129,7 +129,7 @@ It is important to know which books are currently checked out so we can know our
 
 10. Query 10 lists the most popular books from the ‘50s for library display
 
-
+<img width="1175" alt="Query 10" src="https://github.com/user-attachments/assets/a605a4dc-33a8-4e5f-a1e6-6ee20cea002b">
 
 Libraries often want to highlight specific genres, authors, or other categories for theme weeks or promotional purposes. A library may want to highlight books from a specific decade for example. This query helps us pinpoint books from the 50s, which we can then choose a few to put on display.
 
