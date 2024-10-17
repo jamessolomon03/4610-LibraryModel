@@ -68,46 +68,46 @@ While our database model supports book management, employee and user tracking, e
 
 Query 1 allows the library to find the most popular book genres at each branch. This can help with gauging supply and demand and enables the library to better understand the trends of the readers at each branch.
 
-2. Query 2 calculates the average fine amount per user, and lists information pertaining to the users with outstanding fines above the average fine of their branch. The information listed includes the user's first and last name, the user's branch name, the average outstanding fine for the user specifically, and the average fine for the user's branch as a whole.
+2. Query 2 calculates the average fine amount per user, and lists information on the users with outstanding fines above the average fine of their branch. The information listed includes the user's first and last name, the user's branch name, the average outstanding fine for the user specifically, and the average fine for the user's branch as a whole.
 
 <img width="1148" alt="Query 2" src="https://github.com/user-attachments/assets/8d3ae131-10da-46ba-98a4-66090ceaeab7">
 
 Query 2 helps the library pinpoint users with outstanding fines that are above the average fine for their branch. This allows the library to efficiently target these users with reminders and collection efforts, which improves operational efficiency and financial accountability across branches. The branches can also use this information to determine the riskiness of certain users in the future.
 
 
-3. Query 3 lists the Library Users and their home Branch for users who have not attended any events and have only 1 checkout
+3. Query 3 lists the Library Users and their home Branch for users who have not attended any events and only have 1 checkout.
 
 <img width="931" alt="Query 3" src="https://github.com/user-attachments/assets/e0a951d4-1ddc-4dde-b265-a547724cd80d">
 
-This query allows the system to pinpoint which of the user(s) are the least active within the library. Given the user’s and their Branch’s information, we can easily focus on direct advertising to spark their interests and get them involved.
+Query 3 allows the system to pinpoint which of the user(s) are the least active within the library, given that they do not participate in the library’s event offerings and have the minimum number of checkouts. Given the user’s car number, first and last name, and their branch’s name and id, we can easily focus on direct advertising to spark their interest.
 
 
-4. Query 4 lists the percentage of books per branch out of total books across all branches 
+4. Query 4 lists the percentage of books per branch out of total books across all branches.
 
 <img width="943" alt="Query 4" src="https://github.com/user-attachments/assets/92f6e094-d307-421f-80ee-ddbb998d42bf">
 
-This query allows us to find what percent of total books are found in each library. This is important to identify which branches are lacking books in comparison to other branches, which can then be prioritized in following book orders from suppliers.
+Query 4 calculates the percentage of total books that are found in each branch. This is important to identify which branches are lacking books in comparison to the other branches. The information provided can then be used to determine which branches need to order books from suppliers. Another query could be performed in conjunction with Query 4 to determine which books the branches with lacking inventory should order to ensure they are keeping up with the other branches.
 
 
-5. Query 5 identifies who has the most overdue checkout, how many days overdue it is, and who it was
+5. Query 5 identifies which library user had the most overdue checkout and how many days overdue this checkout is, of books returned.
 
 <img width="934" alt="Query 5" src="https://github.com/user-attachments/assets/bc08423f-faa0-4e35-bae1-722a247310c3">
 
-This query allows us to pinpoint the longest a book was returned past due. This is important to understand which customer is likely to return books very late. This also helps libraries understand the latest they can expect current outstanding books to be returned.
+Query 5 allows the library system to pinpoint the longest a book was returned past due. This is important to not only understand which customers are likely to return books very late but also the latest they can expect current outstanding books to be returned. If a book is not returned after this max of 3 days, then the library can assume that it is a possibility, and likely, the book may never be returned, allowing them to calculate their loss and take next steps before it is too late. Additionally, given the name of the user who had the latest return the library can focus its efforts on this mild-risk user. This is because although the user did return their book late, the book has been successfully returned, showing this user is still engaged with the services, they are just not the most efficient in using them. The library could then take steps to encourage this user to be more proactive. 
 
 
-6. Query 6 lists the number of supervisees each supervisor has
+6. Query 6 lists each supervisor’s name and the number of supervisees each supervisor has.
 
 <img width="951" alt="Query 6" src="https://github.com/user-attachments/assets/d3d4f942-73f1-49ac-b7f1-7aa80f7bdf57">
 
-This query allows us to figure out the number of employees each supervisor has in each branch. Libraries want to ensure supervisors have similar amounts of employees under them to prevent burnout or power imbalance amongst supervisors.
+Query 6 allows the library system to figure out the number of employees each supervisor has in each branch. This is important to the library’s operations as it wants to ensure supervisors have similar amounts of employees under them to prevent burnout or power imbalance amongst supervisors.
 
 
-7. Query 7 lists our book inventory alphabetically 
+7. Query 7 lists the book inventory, of the library as a whole, alphabetically.
 
 <img width="1169" alt="Query 7" src="https://github.com/user-attachments/assets/bc00d063-a7e0-4a4b-b323-26be9b0d4496">
 
-Having all books listed A-Z allows libraries to find books when only the title is known quickly.
+Query 7 lists the names of all books in the library’s inventory in alphabetical order. This allows the library to easily pinpoint books by their title, enabling them to notice gaps in their offerings and act accordingly.
 
 
 8. Query 8 lists users who have outstanding fines of at least $3
