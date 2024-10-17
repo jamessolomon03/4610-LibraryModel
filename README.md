@@ -92,53 +92,53 @@ While our database model supports book management, employee and user tracking, e
 - Query 3 allows the system to pinpoint which of the user(s) are the least active within the library, given that they do not participate in the library’s event offerings and have the minimum number of checkouts. Given their card number, name, and their branch’s name and ID, we can easily focus on direct advertising to spark their interest.<br />
 
 
-**4. Query 4 lists each branch’s name and the percentage of books per each branch out of total books in the library system.** <br />
+**4. Query 4 lists each branch’s name and the percentage of books per branch out of total books in the library system.** <br />
 
 <img width="943" alt="Query 4" src="https://github.com/user-attachments/assets/92f6e094-d307-421f-80ee-ddbb998d42bf"><br />
 
-Query 4 helps the library identify which branches are lacking book inventory in comparison to the other branches. The information provided can then be used to determine which branches need to order books from suppliers.<br />
+- Query 4 helps the library identify which branches are lacking book inventory in comparison to the other branches. The information provided can then be used to determine which branches need to order books from suppliers.<br />
 
 
 **5. Query 5 identifies which user had the most overdue checkout and how many days overdue this checkout was, of the books returned.** <br />
 
 <img width="934" alt="Query 5" src="https://github.com/user-attachments/assets/bc08423f-faa0-4e35-bae1-722a247310c3"><br />
 
-Query 5 allows the library system to pinpoint the longest a book was returned past due. This is important to understand which customers are likely to return books abnormally late, but also provides an estimate of the latest the library can expect outstanding books to be returned. If a book is not returned by the maximum estimate, then the library can push reminders to the user or assume that the book may never be returned, allowing them to calculate their loss and take next steps. Additionally, given the name of the user who had the latest return, the library can focus its efforts on this medium-risk user. Although the user did return their book late, it was at least returned showing that this user is still engaged with the services and isn’t most efficient in using them. The library could then take steps to encourage this user to be more proactive and return books on time in the future.<br />
+- Query 5 allows the library system to pinpoint the longest a book was returned past due. This is important to understand which customers are likely to return books abnormally late but also provides an estimate of the latest the library can expect outstanding books to be returned. If a book is not returned by the maximum estimate, then the library can push reminders to the user or assume that the book may never be returned, allowing them to calculate their loss and take next steps. Additionally, given the name of the user who had the latest return, the library can focus its efforts on this medium-risk user. Although the user did return their book late, it was at least returned showing that this user is still engaged with the services and isn’t most efficient in using them. The library could then take steps to encourage this user to be more proactive and return books on time in the future.<br />
 
 
 **6. Query 6 lists each supervisor’s name and the number of supervisees they each have.** <br />
 
 <img width="951" alt="Query 6" src="https://github.com/user-attachments/assets/d3d4f942-73f1-49ac-b7f1-7aa80f7bdf57"><br />
 
-Query 6 allows the library system to figure out the number of employees each supervisor has in each branch. This is important to the library’s operations as it wants to ensure supervisors have similar amounts of employees under them to prevent burnout or power imbalance amongst supervisors. The supervisor with the most supervisees is listed first, with the rest following in descending order.<br />
+- Query 6 allows the library system to figure out the number of employees each supervisor has in each branch. This is important to the library’s operations as it wants to ensure supervisors have similar amounts of employees under them to prevent burnout or power imbalance amongst supervisors. The supervisor with the most supervisees is listed first, with the rest following in descending order.<br />
 
 
 **7. Query 7 lists the book inventory alphabetically for the library system as a whole.** <br />
 
 <img width="1169" alt="Query 7" src="https://github.com/user-attachments/assets/bc00d063-a7e0-4a4b-b323-26be9b0d4496"><br />
 
-Query 7 lists the titles of all books in the library system’s inventory in alphabetical order. This allows the library to easily pinpoint books by their title, enabling them to notice gaps in their offerings and act accordingly.<br />
+- Query 7 lists the titles of all books in the library system’s inventory in alphabetical order. This allows the library to easily pinpoint books by their title, enabling them to notice gaps in their offerings and act accordingly.<br />
 
 
 **8. Query 8 lists the first name of library users who have outstanding fines of at least $3.** <br />
 
 <img width="743" alt="Query 8" src="https://github.com/user-attachments/assets/ff4a2028-a83a-400a-8139-e4cd02f793d5"><br />
 
-Our library system applies a $0.20 fine to checkouts every day they are past due, meaning a $3 fine distinguishes a checkout that is 15 days past due. Query 8 gives us the names of the library users that have outstanding fines of at least $3, meaning these users are the most risky to our business. Due to the fact that query 5 told us the latest a book has ever been returned was 3 days past due, the library is able to assume these checkouts will likely never be returned. Given that these users are extremely risky, the library will also put their names on a list of users prohibited from making more checkouts as long as this checkout remains outstanding. The library may also decide to target these users heavily in order to get the checkouts returned, but this will be up to each branch individually, due to the fact that some may view this as a waste of resources due to the high probability of no return.<br />
+- Our library system applies a $0.20 fine to checkouts every day they are past due, meaning a $3 fine distinguishes a checkout that is 15 days past due. Query 8 gives us the names of the library users that have outstanding fines of at least $3, meaning these users are the most risky to our business. Since query 5 told us the latest a book has ever been returned was 3 days past due, the library can assume these checkouts will likely never be returned. Given that these users are extremely risky, the library will also put their names on a list of users prohibited from making more checkouts as long as this checkout remains outstanding. The library may also decide to target these users heavily to get the checkouts returned, but this will be up to each branch individually because some may view this as a waste of resources due to the high probability of no return.<br />
 
 
 **9. Query 9 lists the titles of books that are currently checked out, along with the first and last name of the library user who has the book checked out, and the corresponding checkout and due date.** <br />
 
 <img width="1160" alt="Query 9" src="https://github.com/user-attachments/assets/f46feeef-502c-4745-9683-4040771f874b"><br />
 
-Query 9 is essential to inform the library of which books are currently checked, that way the library can keep track of the current inventory. Along with this, if there is a book that is currently checked out, but there is another library user that is interested in checking out the same book, having the due date can help the library keep this interested user updated on the status of the expected date they can checkout the book next.<br />
+- Query 9 is essential to inform the library of which books are currently checked, that way the library can keep track of the current inventory. Along with this, if there is a book that is currently checked out, but there is another library user who is interested in checking out the same book, having the due date can help the library keep this interested user updated on the status of the expected date they can checkout the book next.<br />
 
 
 **10. Query 10 lists the title of the most popular books from the ‘50s along with the number of times this book has been checked out.** <br />
 
 <img width="1175" alt="Query 10" src="https://github.com/user-attachments/assets/0e4fd15c-6f29-4a49-9703-6d332e789cdb"><br />
 
-Query 10 helps the library determine which books from this period should be displayed in the library to garner attention. Since libraries often want to highlight specific genres, authors, or other categories for theme weeks or promotional purposes, it is vital to know which books related to highlight are the most popular to bring in the most customers. In this specific case, our library wants to highlight books from the 50s, and the query orders the book titles by the number of checkouts in descending order, putting the most popular book from this period at the top, making it easy to pinpoint top choices.<br />
+- Query 10 helps the library determine which books from this period should be displayed in the library to garner attention. Since libraries often want to highlight specific genres, authors, or other categories for theme weeks or promotional purposes, it is vital to know which books related to highlight are the most popular to bring in the most customers. In this specific case, our library wants to highlight books from the 50s, and the query orders the book titles by the number of checkouts in descending order, putting the most popular book from this period at the top, making it easy to pinpoint top choices.<br />
 
 
 ## Database Information
