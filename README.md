@@ -10,15 +10,15 @@
 - Kylee Hobbs [@kylee-hobbs](https://github.com/kylee-hobbs/MIST4610-Project-1.git)
 - Madeline Dodson [@mpd62417](https://github.com/mpd62417/MIST4610-Library.git)
 
-
-
 ## Scenario Description
 
 Our relational database tracks the operations of public library branches in the state of Georgia. The model surrounds the main entity of Books and catalogs individual physical copies of books. Information such as authors, genres, and suppliers, are also tracked. A single branch location has users, employees, and can put on events that authors may or may not attend. Library users have a membership to one branch, and we track their book checkouts, returns, event attendance, and various transactions. This project aims to model the operations of the library system and the relationships between different elements of the business. The tables in our database have been populated with sample data, and we have performed various SQL queries on this data to answer questions that we believe provide value to the library’s business.
 
-
-
 ## Data Model
+
+<img width="1055" alt="FinalDataModel" src="https://github.com/user-attachments/assets/13db3599-e122-4c2a-a82e-ba3034902406">
+
+## Data Model Explanation
 
 Our model is designed to manage a public library system, supporting the storage of information related to books, authors, suppliers, users, events, employees, and branches.
 
@@ -46,9 +46,6 @@ The UserEvents associative entity links LibraryUsers to Events through a many-to
 
 While our database model supports book management, employee and user tracking, event participation, and financial transactions, it does have limits. For example, we have no way of tracking book reviews or ratings, inter-branch transfers of books, or multiple authors on one book.
 
-<img width="1055" alt="FinalDataModel" src="https://github.com/user-attachments/assets/13db3599-e122-4c2a-a82e-ba3034902406">
-
-
 
 ## Data Dictionary
 
@@ -65,11 +62,11 @@ While our database model supports book management, employee and user tracking, e
 <img width="814" alt="Transactions" src="https://github.com/user-attachments/assets/661f9062-678a-45ff-8a02-81a0fcb47fa4">
 <img width="812" alt="UserEvents" src="https://github.com/user-attachments/assets/7d321dc6-ddb9-4e26-ba74-2d1e3322aac4">
 
-
-
-## Queries
+# Queries
 
 <img width="676" alt="Query Info" src="https://github.com/user-attachments/assets/011a86b7-cdab-4160-8499-68ee5f623297"> <br />
+
+## Six Complex Queries
 
 **1. Query 1 finds the most popular genres by checkout, per branch, including their average checkout duration and number of unique borrowers. The results are first ordered by the branch name and then by the number of checkouts in descending order.** <br />
 
@@ -112,6 +109,8 @@ While our database model supports book management, employee and user tracking, e
 
 - Query 6 allows the library system to figure out the number of employees each supervisor has in each branch. This is important to the library’s operations as it wants to ensure supervisors have similar amounts of employees under them to prevent burnout or power imbalance amongst supervisors. The supervisor with the most supervisees is listed first, with the rest following in descending order.<br />
 
+
+## Four Simple Queries
 
 **7. Query 7 lists the book inventory alphabetically for the library system as a whole.** <br />
 
