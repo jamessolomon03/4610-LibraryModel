@@ -30,11 +30,11 @@ Branches hold information such as name, location, phone number, hours of operati
 
 Within the Employees table, we are tracking each employee’s name, position, email, salary, branchID, as their supervisor through a recursive one-to-many relationship that self-references the employeeID as a foreign key called supervisorID. This supervisorID can be NULL as the head of the library system would not have a supervisor.
 
-The LibraryUsers table holds membership details for each user, such as the start and end dates of their membership, their membership status (i.e. active or inactive), and the branch they are associated with. In our model we are assuming that each user can only be a member of one specific branch, and this is tracked through a one-to-many relationship with Branches through the branchID foreign key.
+The LibraryUsers table holds membership details for each user, such as the start and end dates of their membership, their membership status (i.e. active or inactive), and the branch they are associated with. In our model, we are assuming that each user can only be a member of one specific branch, and this is tracked through a one-to-many relationship with Branches through the branchID foreign key.
 
 Additionally, we can track transactions such as fines, donations, book purchases, etc. in the Transactions table, recording the amount, type of transaction, and the user involved through a one-to-many relationship with LibraryUsers with userCardNumber as the foreign key.
 
-Most importantly, and central to the library business, is the user’s ability to borrow books, which is tracked by the Checkouts table. This associative entity connects LibraryUsers and Books while also recording checkout date, due date, and return date. The foreign keys of bookID and userCardNumber form a composite primary key with the addition of checkoutDate. This composite primary key, and specifically the checkoutDate in DATETIME format, allows users to check out the same book multiple times and even permits the rare case of checking a book out, returning it, and then checking it out again all in the same day.
+Most importantly, and central to the library business, is the user’s ability to borrow books, which is tracked by the Checkouts table. This associative entity connects LibraryUsers and Books while also recording checkout date, due date, and return date. The foreign keys of bookID and userCardNumber form a composite primary key with the addition of checkoutDate. This composite primary key, and specifically the checkoutDate in DATETIME format, allows users to check out the same book multiple times and even permits the rare case of checking a book out, returning it, and then checking it out again all on the same day.
 
 Lastly, each branch hosts events, and the Events table tracks the event title, date, location, any associated author, and the branchID through the foreign key created by the one-to-many relationship between Events and Branches. We are assuming in our model that if there is an author at these events, they’re the only one. We made this assumption with the idea that events are usually book signings or readings where the focus would be on one author. However, we also have events such as book club meetings that do not have an author involved, meaning the author column would be NULL in these instances.
 
@@ -45,33 +45,42 @@ While our database model supports book management, employee and user tracking, e
 <img width="1055" alt="FinalDataModel" src="https://github.com/user-attachments/assets/13db3599-e122-4c2a-a82e-ba3034902406">
 
 ## Data Dictionary
-
-
-
+<img width="621" alt="Authors" src="https://github.com/user-attachments/assets/01fe2eef-c855-476a-891d-540eeecc2c70">
+<img width="638" alt="BookGenre" src="https://github.com/user-attachments/assets/e3f1cd1d-bb09-480f-b6c0-1d92de60051f">
+<img width="628" alt="Books" src="https://github.com/user-attachments/assets/169b7b3f-cd6c-42e2-80b4-222e882c053c">
+<img width="627" alt="Branches" src="https://github.com/user-attachments/assets/5eb53eda-cebb-4e7c-b523-06d0b98354a4">
+<img width="636" alt="Checkouts" src="https://github.com/user-attachments/assets/1405e21a-15f5-4e5d-be1c-4fd8a6c6ddcb">
+<img width="641" alt="Employees" src="https://github.com/user-attachments/assets/c91d2fdf-f5a7-4182-ad4f-686a9e52af88">
+<img width="645" alt="Events" src="https://github.com/user-attachments/assets/30c4d2d0-c1b2-4e8a-a559-b8a0ce51ebde">
+<img width="623" alt="Genre" src="https://github.com/user-attachments/assets/eeacd1c6-5dd7-42a1-a0b4-3db28faeb9a8">
+<img width="638" alt="LibraryUsers" src="https://github.com/user-attachments/assets/98d559d4-10c5-49b3-9b50-2ffbf91af770">
+<img width="627" alt="Suppliers" src="https://github.com/user-attachments/assets/6d09bbf7-d75d-46f1-b194-4323ff2f967e">
+<img width="656" alt="Transactions" src="https://github.com/user-attachments/assets/770bb727-498e-464b-ac42-72442130e4a3">
+<img width="644" alt="UserEvents" src="https://github.com/user-attachments/assets/d227adb4-441b-4368-8408-2ef7c71735bd">
 
 ## Queries
 
 <img width="676" alt="Query Info" src="https://github.com/user-attachments/assets/011a86b7-cdab-4160-8499-68ee5f623297"> <br/>
 
-1. Query 1 finds the most popular genres by checkouts per branch including their average checkout duration and number of unique borrowers
+1. Query 1 finds the most popular genres by checkout, per branch, including their average checkout duration and number of unique borrowers. The results are first ordered by the branch name and then by the number of checkouts in descending order.
 
 <img width="1172" alt="Query 1" src="https://github.com/user-attachments/assets/f8d675dc-4289-432e-a298-e13134cffaa9">
 
-This query allows you to find the most popular book genres at each branch. This can help with gauging supply and demand, and better understanding the trends of their readers.
+Query 1 allows the library to find the most popular book genres at each branch. This can help with gauging supply and demand and enables the library to better understand the trends of the readers at each branch.
 
 
-2. Query 2 calculates the average fine amount per User and lists users with outstanding fines above the average of their branch
+2. Query 2 calculates the average fine amount per user, and lists information pertaining to the users with outstanding fines above the average fine of their branch. The information listed includes the user's first and last name, the user's branch name, the average outstanding fine for the user specifically, and the average fine for the user's branch as a whole.
 
 <img width="1148" alt="Query 2" src="https://github.com/user-attachments/assets/91ad74d3-1d9b-44c6-812a-536dd1ef0759">
 
-This query helps the library pinpoint users with significant fines, allowing for efficient targeting of reminders and collection efforts, which improves operational efficiency and financial accountability across branches.
+Query 2 helps the library pinpoint users with outstanding fines that are above the average fine for their branch. This allows the library to efficiently target these users with reminders and collection efforts, which improves operational efficiency and financial accountability across branches. The branches can also use this information to determine the riskiness of certain users in the future.
 
 
 3. Query 3 lists the Library Users and their home Branch for users who have not attended any events and have only 1 checkout
 
 
 
-This query allows the system to pinpoint which of the user(s) are the least active within the library. Given the user’s and their Branch’s information we can easily focus on direct advertising to spark their interests and get them involved.
+This query allows the system to pinpoint which of the user(s) are the least active within the library. Given the user’s and their Branch’s information, we can easily focus on direct advertising to spark their interests and get them involved.
 
 
 4. Query 4 lists the percentage of books per branch out of total books across all branches 
