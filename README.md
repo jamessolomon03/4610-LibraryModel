@@ -3,7 +3,7 @@
 ## Team Name
 4610Fa24Group7 - Library Data Model
 
-## Authors
+## Team Members
 
 - Robin Rubchenko [@robinrubchenko](https://github.com/robinrubchenko/Library-Model.git)
 - James Solomon [@jamessolomon03](https://github.com/jamessolomon03/librarymodel.git)
