@@ -60,14 +60,13 @@ While our database model supports book management, employee and user tracking, e
 
 ## Queries
 
-<img width="676" alt="Query Info" src="https://github.com/user-attachments/assets/011a86b7-cdab-4160-8499-68ee5f623297"> <br/>
+<img width="676" alt="Query Info" src="https://github.com/user-attachments/assets/011a86b7-cdab-4160-8499-68ee5f623297"> <br />
 
 1. Query 1 finds the most popular genres by checkout, per branch, including their average checkout duration and number of unique borrowers. The results are first ordered by the branch name and then by the number of checkouts in descending order.
 
 <img width="1172" alt="Query 1" src="https://github.com/user-attachments/assets/14cb0117-e943-4710-9470-2735c5727307">
 
 Query 1 allows the library to find the most popular book genres at each branch. This can help with gauging supply and demand and enables the library to better understand the trends of the readers at each branch.
-
 
 2. Query 2 calculates the average fine amount per user, and lists information pertaining to the users with outstanding fines above the average fine of their branch. The information listed includes the user's first and last name, the user's branch name, the average outstanding fine for the user specifically, and the average fine for the user's branch as a whole.
 
