@@ -141,7 +141,7 @@ While our database model supports book management, employee and user tracking, e
 
 ## Presentation File
 
-[9:2:24_ProjectPresentation.pdf](https://github.com/user-attachments/files/17439142/9.2.24_ProjectPresentation.pdf)
+[9:2:24_ProjectPresentation.pdf](https://github.com/user-attachments/files/17439189/9.2.24_ProjectPresentation.pdf)
 
 ## Database Information
 
