@@ -130,6 +130,7 @@ While our database model supports book management, employee and user tracking, e
 
 <img width="1160" alt="Query 9" src="https://github.com/user-attachments/assets/f46feeef-502c-4745-9683-4040771f874b"><br />
 
+
 - Query 9 is essential to inform the library of which books are currently checked, that way the library can keep track of the current inventory. Along with this, if there is a book that is currently checked out, but there is another library user who is interested in checking out the same book, having the due date can help the library keep this interested user updated on the status of the expected date they can checkout the book next.<br />
 
 
@@ -141,7 +142,7 @@ While our database model supports book management, employee and user tracking, e
 
 ## Presentation File
 
-[9:2:24_ProjectPresentation.pdf](https://github.com/user-attachments/files/17439189/9.2.24_ProjectPresentation.pdf)
+[10:2:24_ProjectPresentation.pdf](https://github.com/user-attachments/files/17439801/10.2.24_ProjectPresentation.pdf)
 
 ## Database Information
 
