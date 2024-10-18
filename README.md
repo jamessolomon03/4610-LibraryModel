@@ -139,6 +139,9 @@ While our database model supports book management, employee and user tracking, e
 
 - Query 10 helps the library determine which books from this period should be displayed in the library to garner attention. Since libraries often want to highlight specific genres, authors, or other categories for theme weeks or promotional purposes, it is vital to know which books related to highlight are the most popular to bring in the most customers. In this specific case, our library wants to highlight books from the 50s, and the query orders the book titles by the number of checkouts in descending order, putting the most popular book from this period at the top, making it easy to pinpoint top choices.<br />
 
+## Presentation File
+
+[9:2_MIST4610_ProjectPresentation.pdf](https://github.com/user-attachments/files/17439135/9.2_MIST4610_ProjectPresentation.pdf)
 
 ## Database Information
 
